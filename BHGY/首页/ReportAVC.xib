@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportAVC">
+            <connections>
+                <outlet property="collectionView" destination="Mdf-sW-dDY" id="Puz-dd-Cge"/>
+                <outlet property="footerView" destination="v0S-YO-Gjf" id="op2-ch-qQ5"/>
+                <outlet property="headerView" destination="Vdu-IB-f3X" id="oSk-mf-gQq"/>
+                <outlet property="layout" destination="9Zu-2b-kXa" id="pGr-ec-tAv"/>
+                <outlet property="tableView" destination="T9W-9d-Iep" id="GYb-8R-diP"/>
+                <outlet property="textView" destination="o6d-8h-2v0" id="ixX-uI-7dF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="T9W-9d-Iep">
+                    <rect key="frame" x="0.0" y="88" width="414" height="730"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" name="Color-line"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="54W-Kg-faI"/>
+                        <outlet property="delegate" destination="-1" id="6RQ-UR-1Is"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoj-zP-6iF">
+                    <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.47058823529999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAC:" destination="-1" eventType="touchUpInside" id="LF8-2z-otW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="T9W-9d-Iep" secondAttribute="trailing" id="6Y1-EG-ExY"/>
+                <constraint firstItem="T9W-9d-Iep" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="Bfu-uc-yp0"/>
+                <constraint firstItem="yoj-zP-6iF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="UZP-fD-DX7"/>
+                <constraint firstItem="T9W-9d-Iep" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ZQf-A8-2GB"/>
+                <constraint firstItem="yoj-zP-6iF" firstAttribute="top" secondItem="T9W-9d-Iep" secondAttribute="bottom" id="jvi-Pi-yo9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="T9W-9d-Iep" secondAttribute="bottom" constant="44" id="mMP-du-seX"/>
+                <constraint firstItem="yoj-zP-6iF" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="mTo-gv-oad"/>
+                <constraint firstItem="yoj-zP-6iF" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="vsI-q2-SOB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="124"/>
+        </view>
+        <view contentMode="scaleToFill" id="Vdu-IB-f3X">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWe-sR-Ily">
+                    <rect key="frame" x="20" y="14" width="374" height="55"/>
+                    <string key="text">如果你在72小时内向她支付过 /解锁私聊/查看相册 费用，则
+核实举报属实后，系统将自动退回相关的费用。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="Color"/>
+            <constraints>
+                <constraint firstItem="UWe-sR-Ily" firstAttribute="top" secondItem="Vdu-IB-f3X" secondAttribute="top" constant="14" id="26I-OJ-mMd"/>
+                <constraint firstItem="3zJ-XI-dP1" firstAttribute="bottom" secondItem="UWe-sR-Ily" secondAttribute="bottom" constant="14" id="ReR-Nf-sk8"/>
+                <constraint firstItem="UWe-sR-Ily" firstAttribute="leading" secondItem="3zJ-XI-dP1" secondAttribute="leading" constant="20" id="olc-xq-uHm"/>
+                <constraint firstItem="3zJ-XI-dP1" firstAttribute="trailing" secondItem="UWe-sR-Ily" secondAttribute="trailing" constant="20" id="rR8-Qp-czn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="3zJ-XI-dP1"/>
+            <point key="canvasLocation" x="937.68115942028987" y="8.3705357142857135"/>
+        </view>
+        <view contentMode="scaleToFill" id="v0S-YO-Gjf">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mdf-sW-dDY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Zu-2b-kXa">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vPc-g9-7Kg"/>
+                        <outlet property="delegate" destination="-1" id="KVl-Aw-9T6"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2O-0l-kRs">
+                    <rect key="frame" x="0.0" y="249" width="414" height="60"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o6d-8h-2v0">
+                            <rect key="frame" x="16" y="10" width="382" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="textColor" name="Color-3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="选填"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="o6d-8h-2v0" secondAttribute="bottom" constant="10" id="8F8-72-5pJ"/>
+                        <constraint firstAttribute="height" constant="60" id="BNr-4N-4zo"/>
+                        <constraint firstItem="o6d-8h-2v0" firstAttribute="leading" secondItem="D2O-0l-kRs" secondAttribute="leading" constant="16" id="MVg-DM-hLv"/>
+                        <constraint firstAttribute="trailing" secondItem="o6d-8h-2v0" secondAttribute="trailing" constant="16" id="SFK-7t-uQQ"/>
+                        <constraint firstItem="o6d-8h-2v0" firstAttribute="top" secondItem="D2O-0l-kRs" secondAttribute="top" constant="10" id="eEi-2o-aL1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="补充描述" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-fJ-UEU">
+                    <rect key="frame" x="20" y="223" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7A3-fJ-UEU" firstAttribute="top" secondItem="Mdf-sW-dDY" secondAttribute="bottom" constant="10" id="3cw-DA-VWB"/>
+                <constraint firstItem="D2O-0l-kRs" firstAttribute="top" secondItem="7A3-fJ-UEU" secondAttribute="bottom" constant="10" id="EIh-xr-rws"/>
+                <constraint firstItem="D2O-0l-kRs" firstAttribute="leading" secondItem="NZU-qv-2if" secondAttribute="leading" id="FCU-0t-cO4"/>
+                <constraint firstItem="Mdf-sW-dDY" firstAttribute="trailing" secondItem="NZU-qv-2if" secondAttribute="trailing" id="S05-le-BWD"/>
+                <constraint firstItem="NZU-qv-2if" firstAttribute="bottom" secondItem="D2O-0l-kRs" secondAttribute="bottom" id="ajv-qj-bbS"/>
+                <constraint firstItem="7A3-fJ-UEU" firstAttribute="leading" secondItem="NZU-qv-2if" secondAttribute="leading" constant="20" id="egH-uv-BsH"/>
+                <constraint firstItem="Mdf-sW-dDY" firstAttribute="leading" secondItem="NZU-qv-2if" secondAttribute="leading" id="k51-6a-KwJ"/>
+                <constraint firstItem="D2O-0l-kRs" firstAttribute="trailing" secondItem="NZU-qv-2if" secondAttribute="trailing" id="lY7-ff-fLn"/>
+                <constraint firstItem="Mdf-sW-dDY" firstAttribute="top" secondItem="v0S-YO-Gjf" secondAttribute="top" id="ylu-qm-41r"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="NZU-qv-2if"/>
+            <point key="canvasLocation" x="830.43478260869574" y="429.57589285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.98400002717971802" green="0.47099998593330383" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-3">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-line">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="MyPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的相册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFz-BP-1jr">
+                        <rect key="frame" x="15" y="10" width="54" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" name="Color-3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMP-PN-trd">
+                        <rect key="frame" x="260" y="126" width="45" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="TPc-RC-E5h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="设置照片">
+                            <color key="titleColor" red="0.98431372549999996" green="0.47058823529999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9Kc-XB-Pdx">
+                        <rect key="frame" x="15" y="35.5" width="290" height="80.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HgQ-gX-lZX">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="2wt-aN-zGj"/>
+                            <outlet property="delegate" destination="-1" id="AWt-Ih-qdl"/>
+                        </connections>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-fb-vdf">
+                        <rect key="frame" x="0.0" y="150.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" name="Color-line"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="oqf-bx-IkS"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP6-wU-Nxt">
+                        <rect key="frame" x="260" y="10.5" width="45" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="aOo-5L-hMx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="上传照片">
+                            <color key="titleColor" red="0.98431372549999996" green="0.47058823529999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="uploadImages:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tax-Jq-zKD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VMP-PN-trd" firstAttribute="trailing" secondItem="bP6-wU-Nxt" secondAttribute="trailing" id="6ly-n5-ntW"/>
+                    <constraint firstItem="bP6-wU-Nxt" firstAttribute="centerY" secondItem="qFz-BP-1jr" secondAttribute="centerY" id="Cfe-8X-3eK"/>
+                    <constraint firstItem="VMP-PN-trd" firstAttribute="top" secondItem="9Kc-XB-Pdx" secondAttribute="bottom" constant="10" id="CuW-P9-RxR"/>
+                    <constraint firstAttribute="trailing" secondItem="9Kc-XB-Pdx" secondAttribute="trailing" constant="15" id="DRl-6Z-LhA"/>
+                    <constraint firstItem="qFz-BP-1jr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JCw-RG-hdO"/>
+                    <constraint firstItem="9Kc-XB-Pdx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Pge-Gc-YgB"/>
+                    <constraint firstAttribute="trailing" secondItem="bP6-wU-Nxt" secondAttribute="trailing" constant="15" id="Xll-Cz-4hT"/>
+                    <constraint firstAttribute="bottom" secondItem="VMP-PN-trd" secondAttribute="bottom" constant="10" id="YI7-5J-pVn"/>
+                    <constraint firstItem="9Kc-XB-Pdx" firstAttribute="top" secondItem="bP6-wU-Nxt" secondAttribute="bottom" constant="10" id="Yg8-av-520"/>
+                    <constraint firstAttribute="trailing" secondItem="cxo-fb-vdf" secondAttribute="trailing" id="bXW-4v-bzz"/>
+                    <constraint firstItem="cxo-fb-vdf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lSN-GK-R2A"/>
+                    <constraint firstAttribute="bottom" secondItem="cxo-fb-vdf" secondAttribute="bottom" id="pKx-vQ-oKb"/>
+                    <constraint firstItem="qFz-BP-1jr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pzf-Za-q81"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="collectionView" destination="9Kc-XB-Pdx" id="fxg-gL-FTs"/>
+                <outlet property="layout" destination="HgQ-gX-lZX" id="Ar6-eU-Vhm"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="104.79910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Color-3">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-line">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

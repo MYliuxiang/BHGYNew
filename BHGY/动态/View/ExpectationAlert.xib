@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ExpectationAlert">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTY-CA-ebh">
+                    <rect key="frame" x="180" y="13" width="54" height="16"/>
+                    <string key="text">更多操作
+</string>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" name="Color-3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CcG-UU-fpB">
+                    <rect key="frame" x="0.0" y="42" width="414" height="220"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="IxU-NN-Tkh"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSp-ia-kWb">
+                    <rect key="frame" x="15" y="7" width="30" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" name="Color-3"/>
+                    </state>
+                    <connections>
+                        <action selector="canCleAC:" destination="iN0-l3-epB" eventType="touchUpInside" id="SoU-cG-4hJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5x-LG-Zss">
+                    <rect key="frame" x="369" y="7" width="30" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" name="Color"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAC:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wwr-19-1vI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="CcG-UU-fpB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2Pa-QG-suH"/>
+                <constraint firstItem="lTY-CA-ebh" firstAttribute="centerY" secondItem="cSp-ia-kWb" secondAttribute="centerY" id="4zo-gZ-G14"/>
+                <constraint firstItem="p5x-LG-Zss" firstAttribute="centerY" secondItem="cSp-ia-kWb" secondAttribute="centerY" id="5QV-h3-201"/>
+                <constraint firstItem="CcG-UU-fpB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5ly-rE-edm"/>
+                <constraint firstItem="lTY-CA-ebh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="AXf-hp-O3O"/>
+                <constraint firstItem="lTY-CA-ebh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UfD-69-6Tp"/>
+                <constraint firstItem="cSp-ia-kWb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="W1y-8A-PAC"/>
+                <constraint firstAttribute="trailing" secondItem="p5x-LG-Zss" secondAttribute="trailing" constant="15" id="tbU-qC-P7D"/>
+                <constraint firstItem="CcG-UU-fpB" firstAttribute="top" secondItem="lTY-CA-ebh" secondAttribute="bottom" constant="13" id="z3k-WH-2dh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancleB" destination="cSp-ia-kWb" id="vtI-LD-jTW"/>
+                <outlet property="doneBtn" destination="p5x-LG-Zss" id="Jjn-rb-1bF"/>
+                <outlet property="tableView" destination="CcG-UU-fpB" id="uXa-sg-v3o"/>
+                <outlet property="titleLab" destination="lTY-CA-ebh" id="slv-rX-sMz"/>
+            </connections>
+            <point key="canvasLocation" x="1783" y="-145"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.98400002717971802" green="0.47099998593330383" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-3">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

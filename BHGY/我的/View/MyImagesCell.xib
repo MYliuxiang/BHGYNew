@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyImagesCell">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mzz-cX-Aej">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="141"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="编组 9" translatesAutoresizingMaskIntoConstraints="NO" id="1Z3-sk-gNT">
+                        <rect key="frame" x="0.0" y="0.0" width="18.5" height="23"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅后即焚照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH6-eO-hpE">
+                        <rect key="frame" x="68" y="122" width="68" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFp-gu-cpH">
+                        <rect key="frame" x="81" y="60.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Mzz-cX-Aej" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0qu-s1-Udo"/>
+                <constraint firstItem="1Z3-sk-gNT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="923-bd-45z"/>
+                <constraint firstAttribute="bottom" secondItem="Mzz-cX-Aej" secondAttribute="bottom" id="ECQ-Cr-HwG"/>
+                <constraint firstItem="1Z3-sk-gNT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NJt-zV-sAa"/>
+                <constraint firstItem="kH6-eO-hpE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QyT-A0-9de"/>
+                <constraint firstItem="Mzz-cX-Aej" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WLJ-ZI-Pgd"/>
+                <constraint firstAttribute="bottom" secondItem="kH6-eO-hpE" secondAttribute="bottom" constant="5" id="WSI-bV-HI3"/>
+                <constraint firstAttribute="trailing" secondItem="Mzz-cX-Aej" secondAttribute="trailing" id="c9t-VT-AdU"/>
+                <constraint firstItem="ZFp-gu-cpH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pSJ-W4-9JR"/>
+                <constraint firstItem="ZFp-gu-cpH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xX6-GP-VIX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="204" height="141"/>
+            <connections>
+                <outlet property="img" destination="Mzz-cX-Aej" id="sJ5-0s-nUz"/>
+                <outlet property="moreLab" destination="ZFp-gu-cpH" id="EKP-kO-zeQ"/>
+                <outlet property="stateI" destination="1Z3-sk-gNT" id="f4T-Kj-d8B"/>
+                <outlet property="stateL" destination="kH6-eO-hpE" id="87u-IZ-sJI"/>
+            </connections>
+            <point key="canvasLocation" x="-480" y="73"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="编组 9" width="18.5" height="23"/>
+    </resources>
+</document>

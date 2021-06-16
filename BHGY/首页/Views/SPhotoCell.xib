@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-2J-TDt">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-H4-qBP">
+                        <rect key="frame" x="61" y="5" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="BaI-Z0-Nhi"/>
+                            <constraint firstAttribute="width" constant="14" id="W4G-GJ-pfF"/>
+                        </constraints>
+                        <state key="normal" image="shanchu"/>
+                        <connections>
+                            <action selector="deletedAC:" destination="gTV-IL-0wX" eventType="touchUpInside" id="i8G-C0-Ff7"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xfm-2J-TDt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5UE-r1-TI4"/>
+                <constraint firstAttribute="trailing" secondItem="sUa-H4-qBP" secondAttribute="trailing" constant="5" id="AbU-5A-8wg"/>
+                <constraint firstItem="xfm-2J-TDt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xku-uU-bfa"/>
+                <constraint firstItem="sUa-H4-qBP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ca7-k2-s5H"/>
+                <constraint firstAttribute="bottom" secondItem="xfm-2J-TDt" secondAttribute="bottom" id="l6w-qw-gz4"/>
+                <constraint firstAttribute="trailing" secondItem="xfm-2J-TDt" secondAttribute="trailing" id="oPP-0c-k16"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="80" height="70"/>
+            <connections>
+                <outlet property="deletedB" destination="sUa-H4-qBP" id="DAg-LU-H0i"/>
+                <outlet property="img" destination="xfm-2J-TDt" id="2a2-rg-Jbf"/>
+            </connections>
+            <point key="canvasLocation" x="110.14492753623189" y="93.080357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shanchu" width="14" height="14"/>
+    </resources>
+</document>

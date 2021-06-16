@@ -1,0 +1,158 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AxcAE_TabBar (1.0.5)
+  - IQKeyboardManager (6.5.5)
+  - JXCategoryView (1.5.6)
+  - JXPagingView/Pager (2.0.12)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.2)
+  - MJRefresh (3.4.3)
+  - RongCloudIM/IMKit (4.0.1.1):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (4.0.1.1)
+  - SDAutoLayout (2.1.9)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - TZImagePickerController (3.4.1)
+  - "UITextView+Placeholder (1.4.0)"
+  - UMCCommon (7.1.1)
+  - UMCShare/Core (6.9.10):
+    - UMCCommon
+  - UMCShare/Social/QQ (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+    - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedQQ (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/WeChat (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+    - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+  - WHC_AutoLayoutKit (2.8.6):
+    - WHC_AutoLayoutKit/AutoCellHeight (= 2.8.6)
+    - WHC_AutoLayoutKit/Frame (= 2.8.6)
+    - WHC_AutoLayoutKit/LayoutGuide (= 2.8.6)
+    - WHC_AutoLayoutKit/LayoutView (= 2.8.6)
+    - WHC_AutoLayoutKit/StackView (= 2.8.6)
+    - WHC_AutoLayoutKit/Util (= 2.8.6)
+  - WHC_AutoLayoutKit/AutoCellHeight (2.8.6):
+    - WHC_AutoLayoutKit/LayoutView
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/Frame (2.8.6):
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/LayoutGuide (2.8.6):
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/LayoutView (2.8.6):
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/StackView (2.8.6):
+    - WHC_AutoLayoutKit/Frame
+    - WHC_AutoLayoutKit/LayoutView
+  - WHC_AutoLayoutKit/Util (2.8.6)
+  - YYCache (1.0.4)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AxcAE_TabBar
+  - IQKeyboardManager
+  - JXCategoryView
+  - JXPagingView/Pager
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - RongCloudIM/IMKit (~> 4.0.1.1)
+  - RongCloudIM/IMLib (~> 4.0.1.1)
+  - SDAutoLayout (~> 2.1.3)
+  - SDWebImage (~> 5.0.0)
+  - TZImagePickerController
+  - "UITextView+Placeholder"
+  - UMCCommon
+  - UMCShare/Social/QQ
+  - UMCShare/Social/WeChat
+  - UMCShare/UI
+  - WHC_AutoLayoutKit
+  - YYCache
+  - YYCategories
+  - YYImage
+  - YYText
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AxcAE_TabBar
+    - IQKeyboardManager
+    - JXCategoryView
+    - JXPagingView
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - RongCloudIM
+    - SDAutoLayout
+    - SDWebImage
+    - TZImagePickerController
+    - "UITextView+Placeholder"
+    - UMCCommon
+    - UMCShare
+    - WHC_AutoLayoutKit
+    - YYCache
+    - YYCategories
+    - YYImage
+    - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
+  JXPagingView: 8271bfc6b380ccaf7af8c3075ab162245e96a4c9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  RongCloudIM: 7600e981383ccc5bc1146778f44f4280a40b30f6
+  SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  TZImagePickerController: 4e7a7b3d314f8a75f11042931dfd9d34c270c7db
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  UMCCommon: f455f92c125342e360d6ad9eafe484945351eeb5
+  UMCShare: a4a95fbdd61ecce5b6751d8c9ed9b519e80fcbc9
+  WHC_AutoLayoutKit: 8f1321571cbcc27922ecd9d51a44f4ffe8d98ff8
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 7791eca30d835871599b55aee3dbdb073d119810
+
+COCOAPODS: 1.9.1
